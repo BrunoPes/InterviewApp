@@ -12,12 +12,12 @@ import {
   View
 } from 'react-native';
 
-import Navigation from './src/components/Navigation';
+import Navigator from './src/navigator/Navigator';
 
 export default class App extends Component {
   render() {
     return (
-      <Navigation/>
+      <Navigator/>
     );
   }
 }

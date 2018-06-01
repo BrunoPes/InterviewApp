@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { DrawerNavigator, StackNavigator } from 'react-navigation';
-import TopAlbums from './TopAlbums';
-import Playlists from './Playlists';
-import Bands from './Bands';
-import Albums from './Albums';
+import TopAlbums from '../components/TopAlbums';
+import Playlists from '../components/Playlists';
+import Bands from '../components/Bands';
+import Albums from '../components/Albums';
 
 let topAlbumsNavigator = StackNavigator({
   Main: {
@@ -12,7 +12,6 @@ let topAlbumsNavigator = StackNavigator({
     navigationOptions: {
       title: 'Top Albums',
     },
-    
   }
 });
 

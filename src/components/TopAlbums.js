@@ -1,23 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity,  } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+import MenuIcon from './MenuIcon';
 
 export default class TopAlbums extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
-      headerLeft: (
-        <View style={{ 
-          justifyContent: 'center',
-          alignItems: 'flex-start',
-          width: 100,
-          height: 100}}
-          >
-          <TouchableOpacity onPress={navigation.openDrawer}>
-            <Icon name={'menu'} size={30}/>
-          </TouchableOpacity>
-        </View>
-      )
+      headerLeft: <MenuIcon openDrawer={navigation.openDrawer}/>
     };
   };
 
@@ -27,7 +16,7 @@ export default class TopAlbums extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
         <Text>Top Albums</Text>
       </View>
     );
