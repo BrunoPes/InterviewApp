@@ -1,0 +1,81 @@
+.vscode/
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+ios/*.xcworkspace
+ios/pods/*
+ios/Podfile.lock
+ios/smart-s-ndico/Supporting/*
+
+# Gradle
+/build/
+/RNTester/android/app/build/
+/RNTester/android/app/gradle/
+/RNTester/android/app/gradlew
+/RNTester/android/app/gradlew.bat
+/ReactAndroid/build/
+
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
+/ReactAndroid/src/main/jni/prebuilt/lib/x86/
+/ReactAndroid/src/main/gen
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+*.keystore
+*.jks
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+/danger/node_modules/
+*.log
+.nvm
+yarn.lock
+npm-debug.*
+yarn-error.log
+package-lock.json
+
+# BUCK
+buck-out/
+\.buckd/
+
+# OS X
+.DS_Store
+
+__tests__/
+/coverage
+/third-party
